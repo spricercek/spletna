@@ -91,4 +91,14 @@ footer {
     bottom: 0;
     width: 100%;
 }
+nav ul li a {
+    text-decoration: none;
+    color: #333; /* Osnovna barva besedila */
+    padding: 10px;
+}
 
+nav ul li a:hover {
+    color: #fff; /* Barva besedila ob prehodu z miško */
+    background-color: #f39c12; /* Svetla barva ozadja */
+    border-radius: 5px; /* Zaokrožen rob, po želji */
+}
