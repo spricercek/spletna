@@ -5,6 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Varstvo</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll('.scroll-link').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    let targetId = this.getAttribute('href').substring(1);
+                    let targetElement = document.getElementById(targetId);
+                    let headerHeight = document.querySelector('header').offsetHeight;
+                    
+                    window.scrollTo({
+                        top: targetElement.offsetTop - headerHeight,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
 </head>
 <body>
     <header>
@@ -24,22 +41,21 @@
     <aside>
     <nav>
         <ul>
-            <li><a href="#gorenjska">Gorenjska</a></li>
-            <li><a href="#primorska">Primorska</a></li>
-            <li><a href="#stajerska">Štajerska</a></li>
-            <li><a href="#prekmurje">Prekmurje</a></li>
-            <li><a href="#dolenjska">Dolenjska</a></li>
-            <li><a href="#koroska">Koroška</a></li>
+            <li><a href="#gorenjska" class="scroll-link">Gorenjska</a></li>
+            <li><a href="#primorska" class="scroll-link">Primorska</a></li>
+            <li><a href="#stajerska" class="scroll-link">Štajerska</a></li>
+            <li><a href="#prekmurje" class="scroll-link">Prekmurje</a></li>
+            <li><a href="#dolenjska" class="scroll-link">Dolenjska</a></li>
+            <li><a href="#koroska" class="scroll-link">Koroška</a></li>
         </ul>
     </nav>
 </aside>
 
-
-    <main>
-        <h1>Varstvo za kužke</h1>
-        <p>Poskrbimo za vašega ljubljenčka med vašim odsotnostjo!</p>
-        
-     <!-- Gorenjska regija -->
+<main>
+    <h1>Varstvo za kužke</h1>
+    <p>Poskrbimo za vašega ljubljenčka med vašim odsotnostjo!</p>
+    
+    <!-- Gorenjska regija -->
     <section id="gorenjska">
         <h2>Gorenjska</h2>
         <div class="grid-container">
@@ -171,8 +187,7 @@
         </div>
     </section>
 
-
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105093.22519054764!2d14.52716261564708!3d46.058139134876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476533a88a6a9e23%3A0xa22568f93ce1ce52!2sPasji%20vrtec%20in%20hotel%20Ljubljana!5e1!3m2!1ssl!2ssi!4v1735653477718!5m2!1ssl!2ssi" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </main>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105093.22519054764!2d14.52716261564708!3d46.058139134876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476533a88a6a9e23%3A0xa22568f93ce1ce52!2sPasji%20vrtec%20in%20hotel%20Ljubljana!5e1!3m2!1ssl!2ssi!4v1735653477718!5m2!1ssl!2ssi" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</main>
 </body>
 </html>
