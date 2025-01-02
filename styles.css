@@ -1,14 +1,14 @@
 /* Splošno */
 body {
-    background-color: #fffdd0; /* Kremno bela */
+    background-color: #ffffff; /* Bela za glavno stran */
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* Glava s senco */
+/* Glava s senco in sivo barvo */
 header {
-    background-color: #fffdd0; /* Kremno bela za glavo */
+    background-color: #d3d3d3; /* Siva za glavo */
     padding: 20px;
     text-align: center;
     box-shadow: 0px 4px 2px -2px gray; /* Senca za glavo */
@@ -20,7 +20,7 @@ nav ul {
     padding: 0;
     margin: 0;
     text-align: center;
-    
+    border-bottom: 2px solid black; /* Črna črta pod menijem */
 }
 
 nav ul li {
@@ -46,9 +46,9 @@ main {
     text-align: center;
 }
 
-/* Footer z senco */
+/* Footer z senco in sivo barvo */
 footer {
-    background-color: #fffdd0; /* Kremno bela za nogo */
+    background-color: #d3d3d3; /* Siva za nogo */
     text-align: center;
     padding: 10px;
     position: absolute;
