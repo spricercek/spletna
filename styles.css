@@ -8,14 +8,16 @@ body {
 
 /* Glava s senco in sivo barvo */
 header {
-    background-color: #d3d3d3;
+    background-color: #d3d3d3; /* Siva za glavo */
     padding: 20px;
-    box-shadow: 0px 4px 2px -2px gray;
+    box-shadow: 0px 4px 2px -2px gray; /* Senca za glavo */
     text-align: center;
-    position: fixed; /* Keeps the header fixed at the top */
+    position: fixed; /* Fix header at the top */
     top: 0;
-    width: 100%;
+    width: calc(100% - 220px); /* Adjust width to leave space for aside */
+    margin-left: 220px; /* Align with main content */
     z-index: 100;
+}
 
 /* Center align the menu in the header */
 header nav {
@@ -57,37 +59,17 @@ aside {
     position: fixed; /* Keeps the menu fixed on the left */
     top: 0;
     left: 0;
-    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1); /* Senčenje za levi meni */
     z-index: 99;
-}
-
-aside nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-aside nav ul li {
-    margin-bottom: 15px;
-}
-
-aside nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    display: block;
-    padding: 10px;
-    background-color: #e7e7e7;
-    border-radius: 5px; /* Zaobljeni robovi */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Senčenje kvadratov */
 }
 
 /* Glavno okno */
 main {
     padding: 40px;
-    margin-left: 220px; /* Adds space for the fixed left menu */
-    margin-top: 80px;  /* Adds space for the fixed header */
+    margin-left: 220px; /* Prostor za levi meni */
+    margin-top: 80px; /* Space for fixed header */
     text-align: center;
+    width: calc(100% - 240px); /* Adjust width to avoid overlap with left menu */
 }
 
 /* Footer z senco in sivo barvo */
