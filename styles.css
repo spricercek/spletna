@@ -20,7 +20,7 @@ header nav ul {
     margin: 0;
     display: inline-block;
     text-align: center;
-    border-bottom: 2px solid black; /* Črna črta pod menijem */
+   
 }
 
 header nav ul li {
