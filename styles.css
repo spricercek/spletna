@@ -1,9 +1,6 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f5f5dc;
-    color: #333;
-    margin: 0;
-    padding: 0;
+    background-color: #f5f5dc; /* Kremno bela */
+    font-family: 'Arial', sans-serif; /* Moderna pisava */
 }
 
 header {
@@ -25,10 +22,10 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #333; /* Osnovna barva besedila */
+    padding: 10px;
     font-weight: bold;
 }
-
 main {
     padding: 40px;
     text-align: center;
@@ -101,4 +98,21 @@ nav ul li a:hover {
     color: #fff; /* Barva besedila ob prehodu z miško */
     background-color: #f39c12; /* Svetla barva ozadja */
     border-radius: 5px; /* Zaokrožen rob, po želji */
+}
+
+body {
+    background-color: #f5f5dc; /* Kremno bela */
+    font-family: 'Arial', sans-serif; /* Moderna pisava */
+}
+
+/* Menijski elementi brez obarvanja, samo pisava obarvana ob hover */
+nav ul li a {
+    text-decoration: none;
+    color: #333; /* Osnovna barva besedila */
+    padding: 10px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #f39c12; /* Obarvana samo pisava ob hover */
 }
