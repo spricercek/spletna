@@ -63,6 +63,7 @@ aside {
     background-color: #f5f5f5;
     padding: 20px;
     height: 100vh;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1); /* Senčenje za meni */
 }
 
 nav ul {
@@ -79,14 +80,27 @@ nav ul li a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
+    display: block; /* Naredi kvadrate */
+    padding: 10px;
+    background-color: #e7e7e7;
+    border-radius: 5px; /* Zaobljeni robovi */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Senčenje kvadratov */
 }
 
 nav ul li a:hover {
     color: #808080; /* Siva barva ob hoverju */
+    background-color: #ddd; /* Svetlejše ozadje ob hoverju */
 }
 
-/* Glavna vsebina */
+/* Glavni meni in vsebina */
 main {
-    margin-left: 220px;
+    margin-left: 220px; /* Doda prostor za levi meni */
     padding: 20px;
+}
+
+header {
+    background-color: #ccc;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Senčenje za glavo */
 }
