@@ -125,3 +125,12 @@ footer {
 aside nav ul li a:hover {
     color: #333;
 }
+
+/* Slog za povezave na glavne regije */
+aside nav ul li a {
+    display: block;
+    padding: 10px;
+    background-color: #e7e7e7;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
