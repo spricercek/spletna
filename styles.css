@@ -12,7 +12,7 @@ header {
     padding: 20px;
     box-shadow: 0px 4px 2px -2px gray; /* Senca za glavo */
     text-align: center;
-    width: calc(100% - 220px); /* Adjust width to leave space for aside */
+    width: calc(100%); /* Adjust width to leave space for aside */
     margin-left: 220px; /* Align with main content */
 }
 
