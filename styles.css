@@ -20,7 +20,6 @@ header nav ul {
     margin: 0;
     display: inline-block;
     text-align: center;
-   
 }
 
 header nav ul li {
@@ -71,8 +70,9 @@ aside nav ul li a {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Senčenje kvadratov */
 }
 
+/* Hover efekt za levi meni - obarvana pisava ob hover */
 aside nav ul li a:hover {
-    color: #808080; /* Siva barva besedila ob prehodu z miško */
+    color: #808080; /* Obarvana pisava ob hover (siva) */
 }
 
 /* Glavno okno */
@@ -92,7 +92,6 @@ footer {
     width: 100%;
     box-shadow: 0px -4px 2px -2px gray; /* Senca za nogo */
 }
-
 
 /* Grid postavitev kvadratkov */
 .grid-container {
@@ -126,20 +125,6 @@ footer {
 }
 
 /* Usmeritev na dele glavne strani z izbiro regije */
-aside nav ul li a:hover {
-    color: #333;
-}
-
-/* Slog za povezave na glavne regije */
-aside nav ul li a {
-    display: block;
-    padding: 10px;
-    background-color: #e7e7e7;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-}
-
 html {
     scroll-behavior: smooth;
 }
-
