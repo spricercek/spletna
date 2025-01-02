@@ -71,6 +71,10 @@ aside nav ul li a {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Senčenje kvadratov */
 }
 
+aside nav ul li a:hover {
+    color: #808080; /* Siva barva besedila ob prehodu z miško */
+}
+
 /* Glavno okno */
 main {
     padding: 40px;
